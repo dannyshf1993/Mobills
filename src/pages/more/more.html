@@ -1,0 +1,140 @@
+<!--
+  Generated template for the MorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>More options</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon ios="ios-cog" md="md-cog"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon ios="ios-help" md="md-help"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segment" color="primary">
+      <ion-segment-button value="profile">
+        My profile
+      </ion-segment-button>
+      <ion-segment-button value="manage">
+        Manage
+      </ion-segment-button>
+      <ion-segment-button value="general">
+        General
+      </ion-segment-button>
+      <ion-segment-button value="about">
+        About
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content text-wrap padding>
+
+  <div [ngSwitch]="segment">
+    <ion-list *ngSwitchCase="'profile'" ngSelected="selected">
+      <ion-list>
+        <button ion-item>
+          You are a free user. Get Mobills PRO
+        </button>
+        <button ion-item>
+          Logout
+        </button>
+      </ion-list>
+    </ion-list>
+    <ion-list *ngSwitchCase="'manage'" ngSelected="selected">
+      <ion-list>
+        <button ion-item>
+          Accounts
+        </button>
+        <button ion-item>
+          Tags
+        </button>
+        <button ion-item>
+          Home Screen Cards
+        </button>
+        <button ion-item>
+          Import Data
+        </button>
+        <button ion-item>
+          Export reports
+        </button>
+        <button ion-item>
+          Synchronization
+        </button>
+        <button ion-item>
+          Alerts and notifications
+        </button>
+        <button ion-item>
+          Accounts
+        </button>
+        <button ion-item>
+          Accounts
+        </button>
+        <button ion-item>
+          Accounts
+        </button>
+      </ion-list>
+    </ion-list>
+    <ion-list *ngSwitchCase="'general'" ngSelected="selected">
+      <button ion-item>
+        Calendar
+      </button>
+      <button ion-item>
+        Charts
+      </button>
+      <button ion-item>
+        Monthly balance
+      </button>
+      <button ion-item>
+        Spending by location
+      </button>
+      <button ion-item>
+        Dreams
+      </button>
+      <button ion-item>
+        Emprestimos Online
+      </button>
+      <button ion-item>
+        Travel mode
+      </button>
+      <button ion-item>
+        Tools
+      </button>
+    </ion-list>
+    <ion-list *ngSwitchCase="'about'" ngSelected="selected">
+      <button ion-item>
+        <ion-icon></ion-icon>
+        Invite your friends
+      </button>
+      <button ion-item>
+        <ion-icon></ion-icon>
+        Rate Us
+      </button>
+      <button ion-item>
+        <ion-icon></ion-icon>
+        Help
+      </button>
+      <button ion-item>
+        <ion-icon></ion-icon>
+        Promotions
+      </button>
+      <button ion-item>
+        <ion-icon></ion-icon>
+        About
+      </button>
+    </ion-list>
+  </div>
+
+</ion-content>

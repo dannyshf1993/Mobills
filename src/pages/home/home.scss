@@ -1,3 +1,78 @@
 page-home {
+  .toolbar-content-md {
 
+  }
+  .content-md {
+    background-color: lightgray;
+  }
+
+  .months {
+    width: 100%;
+    background-color: transparent !important;
+    border-bottom: 1px solid (rgb(0, 0, 250));
+    ion-select {
+      font-size: 2.2rem;
+      color: white;
+      float: left;
+      max-width: 100%;
+      padding-left: 0px;
+    }
+  }
+  font-size: 2.0rem;
+  .toolbar-background-md {
+    background-color: blue;
+  }
+  .icon-md {
+    color: white;
+  }
+  .first {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+    color: white;
+    .card-header {
+      padding: 0;
+      padding-top: 20px;
+      margin: 0;
+      color: white;
+      font-size: 2.6rem;
+    }
+    .card-content {
+      padding: 0;
+      margin: 0;
+      font-size: 1.6rem;
+      color: lightgoldenrodyellow;
+    }
+  }
+  .card-md {
+    border-radius: 7px;
+    .card-header {
+      font-weight: bold;
+    }
+    .item-md {
+      font-size: 1.6rem;
+      p {
+        float: right;
+        color: black;
+      }
+    }
+  }
+  .buttons {
+    .fab-md-in-list {
+      width: auto;
+      border-radius: 7px;
+      color: blue;
+      margin-left: -85px;
+      font-size: 1.5rem;
+    }
+  }
 }

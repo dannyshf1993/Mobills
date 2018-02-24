@@ -1,17 +1,45 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Budgets
     </ion-title>
-  </ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="arrow-up"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar> 
 </ion-header>
 
 <ion-content>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="onNewBudget()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+    <ion-card *ngFor="let input of inputs">
+      <ion-card-header>
+          {{ input.selections }}
+          <button ion-button class="icon_button" icon-only>
+            <ion-icon name="more"></ion-icon>
+          </button>
+      </ion-card-header>
+      <ion-card-content>
+        <h2>
+          {{ input.figure }} - 50 = {{figure}}
+        </h2>
+        Budget - Amount spent = Remaining
+
+      </ion-card-content>
+      <button class="button" ion-item>DETAIL</button>
+    </ion-card>
   </ion-list>
 </ion-content>

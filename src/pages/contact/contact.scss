@@ -1,3 +1,30 @@
 page-contact {
-
+    .buttons {
+        .fab-md-in-list {
+          width: auto;
+          border-radius: 7px;
+          color: blue;
+          margin-left: -85px;
+          font-size: 1.5rem;
+        }
+       
+      }
+    .card-header-md {
+      
+      position: relative;
+      font-size: 2.1rem;
+      font-weight: bold;
+      .icon_button {
+      float: right;
+      background: white;
+      box-shadow: none;
+      .icon-md {
+        color: gray;
+      }
+    }
+    }  
+    .button {
+      font-size: 1.6rem;
+      font-weight: bold;
+    } 
 }
